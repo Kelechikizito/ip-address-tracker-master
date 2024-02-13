@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | IP Address Tracker</title>
 
@@ -16,19 +20,45 @@
 </head>
 <body>
 
-  IP Address Tracker
+  <header><h1>IP Address Tracker</h1></header>
 
-  Search for any IP address or domain
+  <main>
+    <div class="form">
+      <form action="">
+        <input type="text" name="IpSearch" id="" placeholder=" Search for any IP address or domain">
+        <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+      </form>
+    </div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+
+    <div class="location-details">
+      <div class="ip-address">
+        <p>IP Address</p>
+        <h2>Lorem, ipsum.</h2>
+      </div>
+
+      <div class="location">
+        <p>Location</p>
+        <h2>Lorem, ipsum dolor.</h2>
+      </div>
+
+      <div class="timezone">
+        <p>Timezone</p>
+        <h2>  UTC <!-- add offset value dynamically using the API --></h2>
+      </div>
+
+      <div class="isp">
+        <p>ISP</p>
+        <h2>Lorem, ipsum.</h2>
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/kelechikizito">Kelechi Kizito Ugwu</a>.
+    </div>
+  </footer> -->
 </body>
 </html>

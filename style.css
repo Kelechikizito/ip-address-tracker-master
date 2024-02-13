@@ -1,0 +1,153 @@
+:root {
+    --font-dark : hsl(0, 0%, 17%);
+    --font-less-dark: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-image: url(./images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.form {
+    width: 40%;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.15fr;
+}
+
+input {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: large;
+}
+
+input::placeholder {
+    font-size: medium;
+    opacity: 0.8;
+}
+
+button {
+    padding: 1rem;
+    background-color: var(--font-dark);
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.location-details {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.location-details > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.ip-address, .location, .timezone {
+    border-right: 0.05rem solid var(--font-less-dark);
+}
+
+.location-details p {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 700;
+    color: var(--font-less-dark);
+    letter-spacing: 0.07rem;
+    margin-top: 0;
+}
+
+.location-details h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--font-dark);
+}
+
+
+/* ACTIVE STATES */
+
+input:hover, button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    border: none;
+    outline: 0;
+}
+
+
+
+/* RESPONSIVE DESIGN */ 
+
+@media (max-width:950px) {
+    .form {
+        width: 60%;
+    }
+}
+
+
+@media (max-width:650px) {
+
+    .form {
+        width: 100%;
+    }
+    
+    input::placeholder {
+        font-size: small;
+        opacity: 0.8;
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  
+    .location-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .ip-address, .location, .timezone {
+        border-right: none;
+    }
+
+    .location-details p {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width:388px) {
+    body {
+        background-image: url(./images/pattern-bg-mobile.png);
+        background-repeat: no-repeat;
+        height: fit-content;
+    }
+}
