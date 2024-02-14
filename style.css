@@ -3,6 +3,13 @@
     --font-less-dark: hsl(0, 0%, 59%);
 }
 
+#map { 
+    height: 70vh; 
+    top: -3.8rem;
+    z-index: -1;
+}
+
+
 body {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -111,7 +118,23 @@ input:focus {
 }
 
 
+@media (max-width:895px) {
+    #map { 
+        height: 70vh; 
+        top: -5.5rem;
+        z-index: -1;
+    }
+    
+}
+
+
 @media (max-width:650px) {
+
+    #map { 
+        height: 70vh; 
+        top: -16.5rem;
+        z-index: -1;
+    }
 
     .form {
         width: 100%;
@@ -145,6 +168,13 @@ input:focus {
 }
 
 @media (max-width:388px) {
+
+    #map { 
+        height: 450px; 
+        top: -15.3rem;
+        z-index: -1;
+    }
+
     body {
         background-image: url(./images/pattern-bg-mobile.png);
         background-repeat: no-repeat;
