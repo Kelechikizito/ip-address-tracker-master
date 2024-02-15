@@ -34,7 +34,6 @@ function getUserIP(api) {
     fetch(api)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         mapper(data.latitude, data.longitude);
         ipAddress.text(data.ip);
         userLocation.text(`${data.city}, ${data.country_name}`);
